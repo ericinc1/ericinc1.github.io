@@ -9,13 +9,12 @@ body {font-family: Arial, Helvetica, sans-serif}
 .topbar {
   /* The image used */
   background-image: url("topbar.png");
-
-  min-height: 150px;
-
+  padding: 0px 0px;
+  min-height: 200px;
   /* Center and scale the image nicely */
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1080px;
   
   /* Needed to position the navbar */
   position: relative;
@@ -24,15 +23,21 @@ body {font-family: Arial, Helvetica, sans-serif}
 /* Position the navbar container inside the image */
 .container {
   position: absolute;
-  padding: 49px 250px;
+  padding: 37px 414px;
   width: auto;
+}
+
+.topcorner{
+  position:absolute;
+  top:0;
+  right:0;
 }
 
 /* The navbar */
 .topnav {
   position: relative;
   overflow: hidden;
-  #padding: 0px 150px;
+  #padding: 0px 250px;
 }
 
 /* Navbar links */
@@ -46,10 +51,10 @@ body {font-family: Arial, Helvetica, sans-serif}
   font-size: 30px;
 }
 
-.topnav-right {
-    float: right;
-    padding: 49px 250px;
-}
+#.topnav-right {
+#    float: right;
+#    padding: 49px 250px;
+#}
 
 .topnav a:hover {
 
@@ -60,6 +65,22 @@ body {font-family: Arial, Helvetica, sans-serif}
 .home {
     background-image: url("home.png");
     min-height: 45.5;
+}
+
+.home:hover .overlay{
+    opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #008CBA;
 }
 
 .feed {
@@ -77,6 +98,9 @@ body {font-family: Arial, Helvetica, sans-serif}
     min-height: 45.5;
 }
 
+
+
+
 </style>
 </head>
 <body background="backgroundxp.jpg">
@@ -86,20 +110,20 @@ body {font-family: Arial, Helvetica, sans-serif}
         <div class="topnav">
           <img src="home.png">
           <img src="shop.png">
-        </div>
-      </div>
-      <div class="topnav-right">
           <img src="feed.png">
           <img src="info.png">
+        </div>
       </div>
     </div>
       <div>
           <h1>some images</h1>
-          <img src="hosi1.jpg" width="100" height="100">
-          <img src="lilme.jpg" width="100" height="100">
+          <img src="hosi1.jpg" width="120" height="90">
+          <img src="lilme.jpg" width="120" height="110">
           <h1>a neat gifs</h1>
           <img src="cat-kiss.gif" width="200" height="150">
-          <img src="earth.gif" width="200" height="150">
+          <img src="earth.gif" width="250" height="200">
+          <div class="overlay">            
+          </div>
       </div>
 
 </body>
