@@ -1,17 +1,106 @@
-
+<!DOCTYPE html>
 <html>
-    <h1>
-        hello im eric, this is ericinc.
-    </h1>
-    <body>
-        <h2>stuff about eric</h2>
-        <p>
-            Im my own boss, who tells myself what to do.
-        </p>
-        <h2>stuff im working on</h2>
-        <p>
-            right now im working on starting up some kind of shop, to start bringing in income.
-            maybe even find a buisness partner to start something, who knows.
-        </p>
-    </body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif}
+* {box-sizing: border-box;}
+
+.topbar {
+  /* The image used */
+  background-image: url("topbar.png");
+
+  min-height: 150px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  padding: 49px 250px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  position: relative;
+  overflow: hidden;
+  #padding: 0px 150px;
+}
+
+/* Navbar links */
+.topnav a {
+  
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 150px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav-right {
+    float: right;
+    padding: 49px 250px;
+}
+
+.topnav a:hover {
+
+  color: rebeccapurple;
+  #background-color: purple;
+}
+
+.home {
+    background-image: url("home.png");
+    min-height: 45.5;
+}
+
+.feed {
+    background-image: url("feed.png");
+    min-height: 45.5;
+}
+
+.info {
+    background-image: url("info.png");
+    min-height: 45.5;
+}
+
+.shop {
+    background-image: url("shop.png");
+    min-height: 45.5;
+}
+
+</style>
+</head>
+<body background="backgroundxp.jpg">
+
+    <div class="topbar">
+      <div class="container">
+        <div class="topnav">
+          <img src="home.png">
+          <img src="shop.png">
+        </div>
+      </div>
+      <div class="topnav-right">
+          <img src="feed.png">
+          <img src="info.png">
+      </div>
+    </div>
+      <div>
+          <h1>some images</h1>
+          <img src="hosi1.jpg" width="100" height="100">
+          <img src="lilme.jpg" width="100" height="100">
+          <h1>a neat gifs</h1>
+          <img src="cat-kiss.gif" width="200" height="150">
+          <img src="earth.gif" width="200" height="150">
+      </div>
+
+</body>
 </html>
