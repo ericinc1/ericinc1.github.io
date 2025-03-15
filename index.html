@@ -4,114 +4,177 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+
+@font-face {
+  font-family: 'nintendo';
+  src: url(fonts/DS.ttf);
+}
+
+@font-face {
+  font-family: 'vcr';
+  src: url(fonts/vcr.ttf);
+}
+
+@font-face {
+  font-family: 'vcralt';
+  src: url(fonts/vcralt.ttf);
+}
+
+
 body {
-  background-image: url("backgroundxp.jpg");
-  background-size: 1920px 1080px;
-}
-
-p {
-  background-color: #0D82F9;
-  background-size: 100px 200px;
-  margin-right: 1400px;
-  font-size: 20px;
-  font-family:sans-serif;
-}
-
-h1 {
-  font-family: sans-serif;
-  padding: 0px 20px;
-  color: black;
-
-.linkstyle {
-  font-size: 20px;
+  background-image: url(backgroundxp.jpg);
 }
 
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.psize {
-  height: 400px 400px;
-  padding: 20px 20px;
+
+.left {
+  float: left;
+  padding: 20px;
+  margin-left: 200px;
 }
 
 .right {
   float: right;
+  padding: 20px;
+  margin-right: 200px;
 }
+
+h1 span {
+  color: white;
+  background-image: url(spacetwinkle.gif);
+  padding: 10px 10px;
+  font-family: vcr;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+  overflow: hidden;
+}
+
+p {
+  background-color: black;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+
+  padding: 10px 10px;
+  font-size: 25px;
+  font-family: "nintendo";
+  color: white;
+}
+
+.imgb {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+
+video {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+
+.outline {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+}
+
+
 
 
 </style>
 
 
-<body>
+
+<body >
+
 
 
 <head>
 
-<img src="topbar.png">
-<video controls src="ericincpromo.mp4" height="150"></video>
-  <div>
 
+    
     <div>
-      <a href="https://www.facebook.com/share/18WPpToawX/">        
-        <img height="150" src="coasterlink.png">
-
-      </a>
-
-      <a href="https://www.youtube.com/@ericinc1">        
-        <img height="150" src="yt.png">
-
-      </a>
-
-    </div>
-
-    <div>
-
-      <h1>what ive been up to</h1>
-
-    </div>
-
-     <p class="psize">
-      ive been ripping an old
-      dvd collection and putting them on a
-      plex server to watch. 
-      <br>
-      <br>
-      ive also been making coasters
-      to sell out of wood, i hope to make some money
-      so i can invest in buying more wood so i can
-      sell bigger projects.
-      <br>
-      <br>
-      oh and im learning how to make this webste
-     </p>
-
-    <div>
-
-      <h1>heres some cool pictures</h1>
-      <img src="hosi1.jpg" height="100" width="100">
-      <img src="image.png" height="100" width="100">
-      <img src="earth.gif" height="100" width="100">
       
+      <img src="topbar.png" class="left">
+      <div class="right">
+      <h1><span> WHAT IVE BEEN UP TO</span></h1>
+
 
       <div>
-
-        <img src="lilme2.jpg" height="100" width="100">
-        <img src="plants-1.gif" height="100" width="100">
-
+        <p>
+          ive been ripping an old dvd collection and putting them<br>
+          on a plex server to watch.<br>
+          <br>
+          ive also been making coasters to sell out of wood, i hope<br> 
+          to make some money so i can invest in buying more<br> 
+          wood so i can sell bigger projects.<br>
+          <br>
+          oh and im learning how to make this webste.
+        
+        </p>
       </div>
-      <div>
-
       </div>
+
 
     </div>
 
-  </div>
+
+    
+    <div>
+      <div>
+        <h1 class="center"><span>LINKS</span></h1>
+        <a href="https://www.facebook.com/share/1DZjZboxFz/">
+          <img src="coasterlink.png" height="125" width="125">
+        </a>
+
+        <a href="https://www.youtube.com/@ericinc1">
+          <img src="yt.png" height="125" width="125">
+        </a>
+      </div>  
+    </div>
 
 
+    <div>
+      <div>
+      <div class="left">
+        <h1 ><span>heres some images</span></h1>
+      <div>
+        <img class="imgb" src="hosi1.jpg" height="60" width="150">
+        <img class="imgb" src="lilme2.jpg" height="80" width="115">
+        <img class="imgb" src="image.png" height="100" width="90">
+      </div>
+
+            <h1><span>some cool gifs yo</span></h1>
+      <div>
+        <img class="imgb" src="earth.gif" height="100" width="100">
+        <img class="imgb" src="plants-1.gif" height="100" width="100">
+        <img class="imgb" src="cat-kiss.gif" height="80" width="100">
+      </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="right">
+      
+      <h1><span>promo video</span></h1>
+      <video controls src="ericincpromo.mp4" height="210"></video>
+
+    </div>
 
 
 
 </head>
+
 
 
 </body>
